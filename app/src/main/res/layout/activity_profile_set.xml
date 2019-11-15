@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSetAct"
+    android:background="@drawable/detailback">
+
+
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:text="Profile Info"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Proftitle"
+
+        />
+
+
+    <TextView
+        android:layout_margin="15dp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:hint="User Name"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Proftitle"
+        android:layout_marginTop="30dp"
+        android:padding="6dp"
+        android:id="@+id/ProfEmail"
+        />
+
+
+
+    <EditText
+        android:layout_margin="15dp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:hint="User Password"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ProfEmail"
+        android:layout_marginTop="30dp"
+        android:padding="6dp"
+        android:id="@+id/ProfPassword"
+        />
+
+
+    <Button
+        android:text="Reset Done"
+        android:textSize="16dp"
+        android:background="#33CCFF"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/ProfPassword"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ProfDoneBt"
+        />
+
+
+
+    <Button
+        android:text="Cancel"
+        android:textSize="16dp"
+        android:background="#33CCFF"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/ProfDoneBt"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ProfCancelBt"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowProDetails"
+    android:background="@drawable/detailback">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+
+        <Button
+
+            android:id="@+id/ProSettingBt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/LL3"
+            android:layout_marginTop="15dp"
+            android:background="#33CCFF"
+            android:text="Setting"
+            android:textColor="#ffffff" />
+
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@+id/ProSettingBt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/projecttrack" />
+
+
+        <LinearLayout
+            android:id="@+id/LL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LL2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/Destinationbt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProSettingBt"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#33CCFF"
+                android:text="Enter Destination"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/ProAddResponse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProSettingBt"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#33CCFF"
+                android:text="Extra message"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+
+                android:id="@+id/showNotesbt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#33CCFF"
+                android:text="Notes"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/showImgBt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/showNotesbt"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#33CCFF"
+                android:text="Images"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LL1"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+
+                android:id="@+id/showDesbt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#33CCFF"
+                android:text="Destination list"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/showLocBt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#33CCFF"
+                android:text="Locations"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="Project Details"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

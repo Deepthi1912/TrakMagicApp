@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seeMyProjectAct"
+    android:background="@drawable/detailback">
+
+
+
+
+    <TextView
+        android:id="@+id/MyProlistLabeltxt"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Project List"/>
+
+
+    <TextView
+        android:textSize="16dp"
+        android:layout_margin="5dp"
+        android:id="@+id/MyProCurrentLabel"
+        android:layout_below="@id/MyProlistLabeltxt"
+        android:textColor="#fff"
+        android:text="Current Project: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="Not Working"
+        android:id="@+id/currentProTxt"
+        android:textSize="16dp"
+        android:textColor="#FF0000"
+        android:layout_margin="5dp"
+        android:layout_below="@id/MyProlistLabeltxt"
+        android:layout_toRightOf="@+id/MyProCurrentLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/MyProHistoryLable"
+        android:layout_margin="5dp"
+     android:layout_below="@id/MyProCurrentLabel"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:text="Project History"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <View
+        android:layout_below="@id/MyProHistoryLable"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+
+
+        <ListView
+            android:layout_margin="5dp"
+            android:id="@+id/MyProListV"
+            android:layout_below="@+id/MyProHistoryLable"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:divider="@drawable/rowline"
+            android:dividerHeight="2dp"/>
+
+
+    <Button
+        android:id="@+id/delAllPro"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/MyProListV"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="5dp"
+        android:background="#33CCFF"
+        android:layout_centerHorizontal="true"
+        android:text="Delete All Project"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

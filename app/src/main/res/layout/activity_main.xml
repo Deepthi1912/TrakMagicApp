@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/blueback">
+
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+
+
+    <TextView
+    android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome "
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:id="@+id/welcomeLabel"/>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/welcomeLabel"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+
+
+        <Button
+
+            android:id="@+id/addprojectbt"
+            android:background="#2979ff"
+            android:textColor="#ffffff"
+            android:text="New project"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/seeFrndtbt"
+            android:layout_below="@+id/addprojectbt"
+            android:background="#2979ff"
+            android:textColor="#ffffff"
+            android:text="My Friends"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+
+
+
+
+        <Button
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/seeAllUserbt"
+            android:layout_below="@+id/addprojectbt"
+            android:layout_toRightOf="@+id/seeFrndtbt"
+            android:background="#2979ff"
+            android:textColor="#ffffff"
+            android:text="All Users"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+
+
+
+
+
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/seeMyProjectbt"
+            android:layout_below="@+id/seeFrndtbt"
+            android:background="#2979ff"
+            android:textColor="#ffffff"
+            android:text="My Project List"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/invitefrnbt"
+            android:layout_below="@+id/seeMyProjectbt"
+            android:background="#2979ff"
+            android:textColor="#ffffff"
+            android:text="Invite friend"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/invitefrnbt"
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/pic"
+           />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

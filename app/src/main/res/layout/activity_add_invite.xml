@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addInviteAct"
+    android:background="@drawable/blueback">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite Friend"
+            android:textColor="#ffffff"
+            android:id="@+id/inviteLabel"/>
+
+
+        <EditText
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/inviteLabel"
+            android:id="@+id/inviteNum"/>
+
+
+
+        <EditText
+            android:gravity="top"
+            android:hint="Enter message"
+            android:layout_below="@+id/inviteNum"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#ffffff"
+            android:id="@+id/inviteMesg"/>
+
+
+        <Button
+            android:layout_below="@+id/inviteMesg"
+            android:background="#2979ff"
+            android:textColor="#ffffff"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Send"
+            android:id="@+id/invitesendbt"/>
+
+
+
+
+        <Button
+            android:layout_below="@+id/invitesendbt"
+            android:background="#2979ff"
+            android:textColor="#ffffff"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Back"
+            android:id="@+id/inviteBackbt"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

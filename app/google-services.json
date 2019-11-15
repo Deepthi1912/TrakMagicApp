@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "105601008279",
+    "firebase_url": "https://samifyp-b7fa7.firebaseio.com",
+    "project_id": "samifyp-b7fa7",
+    "storage_bucket": "samifyp-b7fa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105601008279:android:3c1bb7c45fb735e97a9fd2",
+        "android_client_info": {
+          "package_name": "com.example.usmansh.proofofconcept"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105601008279-68vm1575cd1aumjqmdu9famf268rahif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb6tdMRQ-_JE-sicV3FeWRhQ2KzPQU4YM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105601008279-68vm1575cd1aumjqmdu9famf268rahif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

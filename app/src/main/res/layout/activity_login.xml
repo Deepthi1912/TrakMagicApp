@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".LoginAct">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:srcCompat="@drawable/appicon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TrakMagic"
+        android:textColor="#B5B5B5"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/logEmail"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/logPassword"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/logEmail"
+        app:layout_constraintRight_toRightOf="@+id/logEmail"
+        app:layout_constraintTop_toBottomOf="@+id/logEmail" />
+
+    <Button
+        android:id="@+id/resPass"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:text="Reset Password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+        app:layout_constraintBottom_toTopOf="@id/logReg"
+        app:layout_constraintLeft_toLeftOf="@+id/logPassword"
+        app:layout_constraintRight_toLeftOf="@+id/logBt"
+        app:layout_constraintTop_toBottomOf="@+id/logPassword" />
+
+    <Button
+        android:id="@+id/logBt"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:background="@drawable/buttoncorner"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+        android:layout_marginStart="30dp"
+        android:text="Login"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/logReg"
+        app:layout_constraintEnd_toEndOf="@+id/logPassword"
+        app:layout_constraintStart_toEndOf="@+id/resPass"
+        app:layout_constraintTop_toBottomOf="@+id/logPassword" />
+
+    <Button
+        android:id="@+id/logReg"
+        android:layout_width="126dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="15dp"
+        android:background="#ffffff"
+        android:text="Create Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resPass" />
+
+
+
+
+  <!--  <Button
+        android:id="@+id/homebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HomeBt"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="16dp" />
+-->
+
+</android.support.constraint.ConstraintLayout>

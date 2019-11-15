@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocFromWeb"
+    android:background="@drawable/detailback">
+
+
+    <Button
+        android:id="@+id/webBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#33CCFF"
+        android:text="find Destination"
+        android:textColor="#ffffff" />
+
+
+    <WebView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@+id/webBt"
+        android:id="@+id/webV"></WebView>
+
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:id="@+id/latEd"
+        android:hint="latitude"
+        android:layout_below="@+id/webV"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:id="@+id/longEd"
+        android:hint="longitude"
+        android:layout_below="@+id/webV"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/latEd"
+        />
+
+
+    <Button
+
+        android:text="Set Destination"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/longEd"
+        android:background="#33CCFF"
+        android:textColor="#ffffff"
+        android:layout_margin="8dp"
+        android:id="@+id/setLocationBt"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

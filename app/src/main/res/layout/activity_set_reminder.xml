@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".setReminderAct">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TimePicker
+                android:id="@+id/timepicker"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+            </TimePicker>
+
+
+            <Button
+                android:background="@drawable/buttoncorner"
+                android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+                android:id="@+id/reminderbt1"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/timepicker"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:text="Set reminder 1"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/reminderbt2"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/timepicker"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/reminderbt1"
+                android:background="@drawable/buttoncorner"
+                android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+                android:text="Set Reminder 2"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/reminderbt3"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/reminderbt1"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/buttoncorner"
+                android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+                android:text="Set reminder 3"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/reminderbt4"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/reminderbt1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/reminderbt3"
+                android:background="@drawable/buttoncorner"
+                android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+                android:text="Set Reminder 4"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/doneBt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/reminderbt4"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttoncorner"
+                android:text="Done"
+                android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2"
+                android:textColor="#ffffff" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.people_Fragment"
+    android:id="@+id/people_fragment"
+    android:background="@drawable/detailback">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TrakMagic"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:id="@+id/frndLabel"/>
+
+
+
+    <EditText
+        android:textSize="18dp"
+        android:hint="Search People..."
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:id="@+id/searchfrndEd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/frndLabel"/>
+
+
+    <View
+        android:layout_below="@id/searchfrndEd"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+    <ListView
+        android:id="@+id/fraguserListV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchfrndEd"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:divider="@drawable/rowline"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/invitefrnFbt"
+        app:srcCompat="@drawable/inviteuserimg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PubGuardAct"
+    android:background="@drawable/detailback">
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Intro of Public Guardian"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/PGlabel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PGlabel"
+        android:text="Public  Guardians  are  volunteers  who  are  registered  and  qualified  to  take  a  responsible  interest  in  your  welfare,  and  offer  their  time  and  support  to  monitor  and  review  your  projects  and  reports.  Should  you  require  information,  help  or  assistance  in  any  way,  these  Guardians  can  respond  to  incidents  by  getting  in  touch  with  Emergency  Services  or  other  groups  on  your  behalf.  \n\nIf  you  would  like  to  volunteer  to  become  a  Public  Guardian  yourself,  please  continue  to  register  as  a  volunteer  below."
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:id="@+id/PGintro"/>
+
+
+
+    <Button
+        android:layout_margin="5dp"
+        android:layout_below="@+id/PGintro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" volunteer "
+        android:textColor="#ffffff"
+        android:background="#33CCFF"
+        android:id="@+id/volBt"
+        />
+
+    <Button
+        android:layout_margin="5dp"
+        android:layout_below="@+id/volBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Cancel"
+        android:textColor="#ffffff"
+        android:background="#33CCFF"
+        android:id="@+id/volCanBt"
+        />
+
+
+</RelativeLayout>

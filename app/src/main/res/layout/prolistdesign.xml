@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/startNewProRL"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttoncorner"
+       >
+
+
+        <TextView
+            android:id="@+id/proLNametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Project 1"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/proLDatetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proLNametv"
+            android:layout_centerHorizontal="true"
+            android:text="Nov 25 - Nov 30"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

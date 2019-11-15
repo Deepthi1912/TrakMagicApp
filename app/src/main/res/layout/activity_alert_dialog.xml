@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlertDialogAct"
+    android:background="#ffffff">
+
+
+    <!--
+
+
+    <RelativeLayout
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <EditText
+            android:id="@+id/notesTextEd"
+            android:textColorHint="#000000"
+            android:padding="10dp"
+            android:gravity="start"
+            android:hint="Enter Notes Here"
+            android:background="#ffffff"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:textColor="#000000"/>
+
+
+    </RelativeLayout>
+
+-->
+
+
+
+
+
+    <Button
+        android:id="@+id/crossAlert"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/crossproimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alertlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/tickProject"
+        android:text="Reminder"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tickAlert"
+        app:layout_constraintStart_toEndOf="@+id/crossAlert"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tickAlert"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/tickproimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTimetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:text="Dec 03, 2:58pm"
+        android:textColor="#B5B5B5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alertlabel" />
+
+    <EditText
+        android:id="@+id/notesTextEd"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Say Something..."
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTimetv" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:text="Pictures"
+        android:textColor="#B5B5B5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notesTextEd" />
+
+    <Button
+        android:id="@+id/openCambt"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/addpicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+
+
+<!--    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/doneData"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:src="@drawable/donedata"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="1.0" />
+-->
+
+
+
+
+    <Button
+        android:id="@+id/submitNotesbt"
+        android:textColor="#ffffff"
+        android:background="#2979ff"
+        android:text="Submit Notes"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/notesTextEd"/>
+
+
+
+    <Button
+        android:id="@+id/skiptNotesbt"
+        android:textColor="#ffffff"
+        android:background="#33CCFF"
+        android:text="Skip"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/submitNotesbt"/>
+
+
+    <ImageView
+        android:id="@+id/displayImg"
+        android:layout_width="313dp"
+        android:layout_height="194dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openCambt"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
